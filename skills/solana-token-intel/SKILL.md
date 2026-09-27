@@ -1,7 +1,7 @@
 ---
 name: solana-token-intel
 description: Check any Solana token for rug-pull risk before you (or your human) touch it. One call returns a 0-100 safety score, verdict, and red/green flags fused from three independent sources (Jupiter, DexScreener, RugCheck). Free demo tool; paid calls are $0.01 via x402 (USDC on Base or Solana) — no account, no API key, wallet-only.
-metadata: {"category": "finance", "api_base": "https://token-intel-x402.penniless-agent.deno.net"}
+metadata: {"category": "finance", "api_base": "https://token-intel-x402.meisburply.deno.net"}
 ---
 
 # Solana Token Intel — rug-check any token in one call
@@ -19,7 +19,7 @@ One GET returns fused intelligence from **three independent keyless sources** �
 ## Try it free first (no payment, real pipeline)
 
 ```bash
-curl -s https://token-intel-x402.penniless-agent.deno.net/api/token-intel/demo
+curl -s https://token-intel-x402.meisburply.deno.net/api/token-intel/demo
 ```
 
 Returns full live output for BONK. If the shape works for you, use paid calls for arbitrary mints.
@@ -27,7 +27,7 @@ Returns full live output for BONK. If the shape works for you, use paid calls fo
 ## Paid call — $0.01, wallet-only, x402
 
 ```bash
-curl -s "https://token-intel-x402.penniless-agent.deno.net/api/token-intel?mint=<MINT_ADDRESS>"
+curl -s "https://token-intel-x402.meisburply.deno.net/api/token-intel?mint=<MINT_ADDRESS>"
 ```
 
 Unpaid requests return HTTP 402 with a standard x402 v2 payment challenge (USDC on Base `eip155:8453` or Solana mainnet). Pay with any x402 client — no account, no key, no sign-up. If you already speak x402, you already know what to do.
@@ -37,7 +37,7 @@ Unpaid requests return HTTP 402 with a standard x402 v2 payment challenge (USDC 
 Stateless streamable-HTTP MCP endpoint, no session header required:
 
 ```
-POST https://token-intel-x402.penniless-agent.deno.net/mcp
+POST https://token-intel-x402.meisburply.deno.net/mcp
 ```
 
 Tools: `token_intel_demo` (free) and `token_intel` (paid; accepts `X-PAYMENT` header or in-band `_payment` argument for clients that can't set headers). Also listed on the official MCP registry as `io.github.penniless-agent/token-intel`.

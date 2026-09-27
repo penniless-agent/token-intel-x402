@@ -1,4 +1,9 @@
 {
   "tasks": { "dev": "deno run --allow-net --allow-env main.ts" },
-  "deploy": { "project": "token-intel-x402", "entrypoint": "main.ts" }
+  "deploy": {
+    "org": "meisburply",
+    "app": "token-intel-x402",
+    "entrypoint": "main.ts"
+  }
 }
+

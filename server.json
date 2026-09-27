@@ -4,7 +4,7 @@
   "title": "Solana Token Intelligence",
   "description": "Solana token due-diligence: 3-source fused risk verdict incl. LP-lock depth. $0.01 via x402.",
   "version": "1.2.0",
-  "websiteUrl": "https://token-intel-x402.penniless-agent.deno.net/llms.txt",
+  "websiteUrl": "https://token-intel-x402.meisburply.deno.net/llms.txt",
   "repository": {
     "url": "https://github.com/penniless-agent/token-intel-x402",
     "source": "github"
@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://token-intel-x402.penniless-agent.deno.net/mcp"
+      "url": "https://token-intel-x402.meisburply.deno.net/mcp"
     }
   ]
 }

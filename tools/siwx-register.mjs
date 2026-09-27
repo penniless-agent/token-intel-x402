@@ -9,7 +9,7 @@ const require = createRequire(join(WALLET_DIR, "package.json"));
 const { Wallet, getAddress } = require("ethers");
 
 const ENDPOINT = "https://www.x402scan.com/api/x402/registry/register-origin";
-const ORIGIN = process.env.SERVICE_ORIGIN || "https://token-intel-x402.penniless-agent.deno.net";
+const ORIGIN = process.env.SERVICE_ORIGIN || "https://token-intel-x402.meisburply.deno.net";
 
 const w = JSON.parse(readFileSync(join(WALLET_DIR, "wallet.json"), "utf8"));
 const wallet = new Wallet(w.privateKey);
